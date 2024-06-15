@@ -17,13 +17,33 @@ The apk file is located in the "OrionSupplyChain\app\build\outputs\apk\androidTe
 ### Folder Structure
 
 ````
-PROJECTS - Mobile PROGRAMMING
-├── Lecture X
-│   ├── #projectName#
+PROJECTS - Mobile PROGRAMMING - ORIONSC
+├── OrionSupplyChain
+├── Resources
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ````
+
+## Screenshots
+
+**Application Icon**
+
+![Application Icon](Resources/images/Image1.PNG)
+
+**Initial Screen**
+
+![Initial Screen](Resources/images/Image3.PNG)
+
+**Supply Order Page**
+
+![Supply Order Page](Resources/images/Image7.PNG)
+
+## Video
+
+**Presentation video**
+
+![Presentation video](Resources/video/Orion%20Supply%20Chain.mp4)
 
 ## Authors
 
