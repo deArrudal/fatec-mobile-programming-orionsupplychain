@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemCustomer"
+        android:title="@string/customer_label" />
+    <item
+        android:id="@+id/itemFood"
+        android:title="@string/food_label" />
+    <item
+        android:id="@+id/itemGoods"
+        android:title="@string/goods_label" />
+    <item
+        android:id="@+id/itemOrders"
+        android:title="@string/orders_label" />
+    <item
+        android:id="@+id/itemSupplyOrder"
+        android:title="@string/supply_order_label" />
+</menu>

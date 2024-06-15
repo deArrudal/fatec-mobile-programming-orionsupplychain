@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutSupplyOrder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.SupplyOrderFragment">
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/supply_order_label"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/supply_order_id_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSupplyOrderId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupplyOrderTitle" />
+
+    <EditText
+        android:id="@+id/editTextSupplyOrderId"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/supply_order_id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSupplyOrderNewOrder"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSupplyOrderIdLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupplyOrderIdLabel" />
+
+    <Button
+        android:id="@+id/buttonSupplyOrderNewOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:text="@string/button_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupplyOrderIdLabel" />
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderCustomerIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/supply_order_customer_id_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerSupplyOrderCustomer"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupplyOrderIdLabel" />
+
+    <Spinner
+        android:id="@+id/spinnerSupplyOrderCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSupplyOrderCustomerIdLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupplyOrderCustomerIdLabel" />
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderProductLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/supply_order_product_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerSupplyOrderProduct"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupplyOrderCustomerIdLabel" />
+
+    <Spinner
+        android:id="@+id/spinnerSupplyOrderProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSupplyOrderProductLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupplyOrderProductLabel" />
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/supply_order_quantity_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSupplyOrderQuantity"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupplyOrderProductLabel" />
+
+    <EditText
+        android:id="@+id/editTextSupplyOrderQuantity"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/supply_order_quantity"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewSupplyOrderQuantityLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewSupplyOrderQuantityLabel" />
+
+    <Button
+        android:id="@+id/buttonSupplyOrderAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_add"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSupplyOrderClear"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSupplyOrderQuantityLabel" />
+
+    <Button
+        android:id="@+id/buttonSupplyOrderClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_clear"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonSupplyOrderAdd"
+        app:layout_constraintTop_toTopOf="@+id/buttonSupplyOrderAdd" />
+
+    <Button
+        android:id="@+id/buttonSupplyOrderFinish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_finish"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSupplyOrderAdd" />
+
+    <TextView
+        android:id="@+id/textViewSupplyOrderTotalOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:gravity="center_vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayoutOrders"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.OrdersFragment">
+
+    <TextView
+        android:id="@+id/textViewOrdersTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/orders_label"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonOrdersCustomerIdSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/database_search"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrdersTitle"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/textViewOrdersCustomerOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrdersCustomerIdSearch" />
+
+    <TextView
+        android:id="@+id/textViewOrdersSupplyOrderIdLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:text="@string/orders_supply_order_id_label"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/editTextOrdersSupplyOrderId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrdersCustomerOutput" />
+
+    <Button
+        android:id="@+id/buttonOrdersSupplyOrderIdSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="@string/database_search"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrdersSupplyOrderIdLabel" />
+
+    <EditText
+        android:id="@+id/editTextOrdersSupplyOrderId"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="@string/orders_supply_order_id"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="@color/gray"
+        app:layout_constraintEnd_toStartOf="@+id/buttonOrdersSupplyOrderIdSearch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewOrdersSupplyOrderIdLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewOrdersSupplyOrderIdLabel" />
+
+    <Button
+        android:id="@+id/buttonOrdersSupplyOrderIdRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/database_remove"
+        app:layout_constraintEnd_toEndOf="@+id/buttonOrdersSupplyOrderIdSearch"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrdersSupplyOrderIdSearch" />
+
+    <TextView
+        android:id="@+id/textViewOrdersSupplyOrderOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:gravity="center_vertical"
+        android:scrollbars="vertical"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOrdersSupplyOrderIdLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
